@@ -8,7 +8,7 @@ $correoelectronico=$_POST['correo'];
 $telefono=$_POST['telefono'];
 
 
-$con = mysqli_connect("localhost","root","4f32736") or die ("ocurrio un error al conectarse a la base de datos o servidor");
+$con = mysqli_connect("localhost","238758bca596edec7e45625abff3ffd326a7df78","formulario") or die ("ocurrio un error al conectarse a la base de datos o servidor");
 
 $query = "INSERT INTO formulario (usuario,nombre,contraseña,repetircontraseña,correoelectronico,telefono)
     VALUES ($usuario', $nombre', $contraseña', $repetircontraseña',$correoelectronico',$telefono')"
